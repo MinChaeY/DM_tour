@@ -1,0 +1,7 @@
+# 기상청 초단기실황 API 서비스 키 (공공데이터포털에서 발급받은 키 입력)
+weather.serviceKey=YOUR_WEATHER_API_SERVICE_KEY_HERE
+
+# 데이터베이스 연결 설정
+db.url=jdbc:mysql://localhost:3306/YOUR_DATABASE_NAME?serverTimezone=UTC&useSSL=false&characterEncoding=utf-8
+db.username=YOUR_DB_USERNAME
+db.password=YOUR_DB_PASSWORD

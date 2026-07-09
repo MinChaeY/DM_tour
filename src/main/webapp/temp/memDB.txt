@@ -1,0 +1,30 @@
+DROP DATABASE webdb;
+
+CREATE DATABASE `webdb` /*!40100 DEFAULT CHARACTER SET utf8mb3 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+USE webdb;
+
+CREATE TABLE `membertbl` (
+  `id` varchar(50) NOT NULL,
+  `password` varchar(60) NOT NULL,
+  `nick` varchar(10) NOT NULL,
+  `gen` varchar(10) NOT NULL,
+  `role` int NOT NULL DEFAULT 1, -- 0은 관리자, 1은 일반 회원
+  
+  PRIMARY KEY (`id`)
+) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+INSERT INTO membertbl VALUES("admin", '000', "관리자", '여성', 0);
+INSERT INTO membertbl VALUES("mem1", '123', "사용자1", '여성', 1);
+INSERT INTO membertbl VALUES("mem2", '123', "사용자2", '여성', 1);
+INSERT INTO membertbl VALUES("mem3", '123', "사용자3", '여성', 1);
+INSERT INTO membertbl VALUES("mem4", '123', "사용자4", '여성', 1);
+INSERT INTO membertbl VALUES("mem5", '123', "사용자5", '여성', 1);
+INSERT INTO membertbl VALUES("mem6", '123', "사용자6", '여성', 1);
+INSERT INTO membertbl VALUES("mem7", '123', "사용자7", '여성', 1);
+INSERT INTO membertbl VALUES("mem8", '123', "사용자8", '여성', 1);
+INSERT INTO membertbl VALUES("mem9", '123', "사용자9", '여성', 1);
+INSERT INTO membertbl VALUES("mem10", '123', "사용자10", '여성', 1);
+
+
+select * from membertbl;

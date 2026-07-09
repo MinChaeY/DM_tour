@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/* 왼쪽 메뉴바 스타일 */
+main{
+    margin: 0 auto; /* 가운데 정렬을 위한 바깥쪽 여백 설정 */
+    max-width: 1300px; /* 원하는 최대 너비로 설정 */
+}
+.left-sidebar {
+    background-color: rgb(235, 235, 235);
+    font-size: 18px;
+    color: #fff;
+    width: 150px;
+    height: 100vh;
+    position: fixed;
+    z-index: 1; /* 헤더, 푸터랑 안 겹치게 아래로 내리기 */
+    
+}
+
+.left-sidebar ul {
+    list-style: none;
+    padding: 20px 0;
+}
+
+.left-sidebar li {
+    padding: 10px;
+    text-align: center;
+}
+
+.left-sidebar a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+}
+
+.left-sidebar a:hover {
+    color: #57acf7;
+}
+
+/* 오른쪽 콘텐츠 영역 스타일 */
+.right-content {
+    margin-left: 200px;
+    padding: 20px;
+    
+}
+
+/* 회원 정보 */
+#member {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.member-info {
+
+}
+.member-info p {
+    margin: 10px 0;
+}
+
+/* 회원 정보 수정 폼 */
+#edit-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*테이블*/
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+        
+/* 회원 정보 수정 폼 스타일 */
+.right-content form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.right-content label {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.right-content input,
+.right-content select {
+    width: calc(100% - 20px);
+    padding: 6px;
+    margin-bottom: 10px;
+}
+
+.right-content button {
+    background-color: #ccc;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.right-content button:hover {
+    background-color:#57acf7
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

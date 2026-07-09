@@ -1,0 +1,170 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+  	font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+.top-header {
+	position: relative; /* position 속성 추가 */
+	z-index: 2;    /*뒤로보내기*/
+	background-color: white;      /*헤더 배경색상*/
+	padding: 0 2rem;                 /*헤더 안쪽 여백*/
+	display: -webkit-box;            /*헤더 플랙스박스로 만들고 내부 요소를 수평 정렬*/
+	display: -ms-flexbox;
+	display: flex;           
+	padding: 0 4rem; /* 좌우 여백을 4rem으로 조절 */
+	     
+	-webkit-box-pack: justify;
+	      -ms-flex-pack: justify;
+	          justify-content: space-between;
+	  -webkit-box-align: center;
+	      -ms-flex-align: center;
+	          align-items: center;
+	  border-radius: 0.5rem;
+	  -webkit-transition: all 0.25s cubic-bezier(0.42, 0, 0, 1);
+	  transition: all 0.25s cubic-bezier(0.42, 0, 0, 1);
+	  -webkit-box-shadow: 0px 2px 4px -1px #0000000f, 0px 4px 6px -1px #0000001a;
+	          box-shadow: 0px 2px 4px -1px #0000000f, 0px 4px 6px -1px #0000001a;
+}
+
+
+/* 사이트명 부분 동미 */
+.dongyang {
+	  text-transform: uppercase;
+	  font-size: 40px; /* 동미투어 글씨 사이즈 변경*/
+	  font-weight: 1000;
+	  font-style: italic; /* 기울임을 추가 */
+	  font-weight: bold; /* 글씨를 두껍게 만들기 */
+}
+
+/* 사이트명 부분 투어 */
+.dongtour {
+	  color: #7cc0f8;
+	  font-style: italic; /* 기울임을 추가 */
+	  font-weight: bold; /* 글씨를 두껍게 만들기 */
+}
+
+.login li {
+	  display: inline-block; /* 가로로 나열되도록 설정 */
+	  margin-right: 0px; /* 각 항목 사이 간격 조절 (원하는 만큼 조절) */
+}
+
+/*메뉴 클래스가 지정된 요소에 대한 스타일*/
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  margin-right: 20px; /* 메뉴 간 간격 조절 가능한 값 */
+  position: relative;
+  
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333; /* 메뉴 글자 색상 조절 가능한 값 */
+  font-weight: bold;
+  padding: 10px;
+  display: inline-block;
+}
+
+.submenu,
+.subplay {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  flex-direction: row; /* 가로로 나열되도록 설정 */
+  
+}
+
+.menu li:hover .submenu,
+.menu li:hover .subplay {
+  display: flex; /* 가로로 나열되도록 변경 */
+  flex-direction: row; /* 가로로 나열되도록 변경 */
+}
+
+.submenu a,
+.subplay a {
+  color: #333;
+  padding: 8px 15px;
+  display: block; /* 세로로 나열되는 것을 방지하기 위해 block으로 설정 */
+  text-decoration: none;
+  width: 100px;
+}
+
+.submenu a:hover,
+.subplay a:hover {
+  background-color: #f4f4f4;
+}
+
+
+
+/*검색어 부분 스타일*/
+.search {
+    display: flex;
+}
+
+.rounded-search {
+    border: 1px solid #ccc;
+    border-radius: 20px; /* 조절 가능한 값 */
+    overflow: hidden;
+    display: flex;
+}
+
+.search input {
+    border: none;
+    padding: 10px;
+    border-radius: 20px 0 0 20px; /* 왼쪽 둥근 경계 지정 */
+    width: 300px; /* 입력 창 너비 조절 가능한 값 */
+    font-size: 13px;
+}
+
+.search button {
+    background-color: #8ebafd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 20px 20px 0; /* 오른쪽 둥근 경계 지정 */
+    cursor: pointer;
+    font-size: 13px;
+}
+
+
+
+/* 가운데 컨텐츠 관련 CSS */
+#content1 {
+    width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+	word-break: break-all;
+}
+
+
+
+
+
+
+
+

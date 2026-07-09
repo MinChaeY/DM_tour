@@ -1,0 +1,10 @@
+# Eclipse artifacts
+
+
+# Build and classes output
+build/
+bin/
+classes/
+
+# Security sensitive configurations
+src/main/java/config.properties
